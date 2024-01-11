@@ -1,13 +1,24 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './nav.module.scss'
 import Link from 'next/link'
-
+import { usePathname, useSearchParams } from 'next/navigation'
 function Nav() {
   const [current, setCurrent] = useState('home');
+  const path = usePathname()
+
+  useEffect(() => {
+    if (path === '/') {
+      setCurrent('home')
+    } else {
+      const newPath = path.substring(1)
+      setCurrent(newPath)
+    }
+  }, [path])
+
   const items = [
     {
-      label: (<Link href="/home">首页</Link>),
+      label: (<Link href="/">首页</Link>),
       key: 'home',
     },
     {

@@ -1,0 +1,60 @@
+.introduce {
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .introduceCenter {
+        width: 73%;
+        display: flex;
+        justify-content: space-between;
+        .title {
+            min-width: 18.56rem;
+            max-width: 18.56rem;
+            h2 {
+                margin-top: 0.75rem;
+                font-size: 2rem;
+                font-family: Abhaya Libre, sans-serif;
+                font-weight: 400;
+                color: #1a4588;
+                line-height: 3.2rem;
+                letter-spacing: 2px;
+            }
+            h2:last-child {
+                font-size: 2.25rem;
+                font-family: Microsoft YaHei, sans-serif;
+                font-weight: bold;
+                color: #051631;
+                line-height: 2.64rem;
+                letter-spacing: 2px;
+            }
+        }
+        .content {
+            margin-left: 2.5rem;
+            .detail {
+                p {
+                    font-size: 1.25rem;
+                    font-family: Microsoft YaHei UI, sans-serif;
+                    font-weight: 400;
+                    color: #1e2c43;
+                    line-height: 2.25rem;
+                    letter-spacing: 1px;
+                }
+            }
+            button {
+                margin-top: 2.5rem;
+                width: 12.81rem;
+                height: 3.63rem;
+                background: #051631;
+                border: none;
+                opacity: 1;
+                font-size: 1.25rem;
+                font-family: Arial, sans-serif;
+                font-weight: 400;
+                color: #ffffff;
+                line-height: 2.25rem;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}

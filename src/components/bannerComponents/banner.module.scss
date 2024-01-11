@@ -1,0 +1,34 @@
+.banner {
+    width: 100%;
+    opacity: 1;
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        .title {
+            margin-top: -3.81rem;
+            width: 101.25rem;
+            height: 6.31rem;
+            background: #ffffff;
+            box-shadow: 0rem -1.25rem 0rem 0rem #08428f;
+            border-radius: 0rem 0rem 0rem 0rem;
+            opacity: 1;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            h1 {
+                margin-left: 6.38rem;
+                font-size: 2rem;
+                font-family: Abhaya Libre, sans-serif;
+                font-weight: 400;
+                color: #1a4588;
+                line-height: 3.2rem;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}

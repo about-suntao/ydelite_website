@@ -2,6 +2,12 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '@/assets/styles/globals.css'
 import { AntdRegistry } from '@ant-design/nextjs-registry';
+// swiper 插件
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css/grid';
+
 import Header from '@/components/header/page'
 import Footer from '@/components/footer/page';
 
