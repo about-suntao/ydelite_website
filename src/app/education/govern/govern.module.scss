@@ -1,0 +1,105 @@
+.govern {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content {
+        width: 90rem;
+        margin-top: 5.63rem;
+        margin-bottom: 6.25rem;
+        .title {
+            margin-bottom: 2.5rem;
+            h2 {
+                text-align: center;
+                font-size: 2.25rem;
+                font-family: Microsoft YaHei, sans-serif;
+                font-weight: bold;
+                color: #051631;
+                line-height: 2.64rem;
+                letter-spacing: 2px;
+            }
+            p {
+                text-align: center;
+                font-size: 2rem;
+                font-family: Abhaya Libre, sans-serif;
+                font-weight: 400;
+                color: #1a4588;
+                line-height: 3.2rem;
+                letter-spacing: 2px;
+            }
+        }
+        .cardBox {
+            display: flex;
+            .left {
+                img {
+                    width: 52.5rem;
+                    height: 35.25rem;
+                    background: #000201;
+                    opacity: 1;
+                }
+            }
+            .right {
+                margin-left: -5.75rem;
+                position: relative;
+                .right_content {
+                    margin-top: 6.63rem;
+                    padding: 3.81rem 4rem 0 4rem;
+                    width: 43.13rem;
+                    height: 17.25rem;
+                    background: #ffffff;
+                    box-shadow: 0rem -0.44rem 0rem 0rem #1e5aaa,
+                        0rem 0.25rem 0.32rem 0rem rgba(67, 68, 97, 0.25);
+                    .title_zn {
+                        font-size: 1.75rem;
+                        font-family: Microsoft YaHei, sans-serif;
+                        font-weight: bold;
+                        color: #051631;
+                        line-height: 2.8rem;
+                        letter-spacing: 2px;
+                        display: flex;
+                        justify-content: center;
+                        p + p {
+                            margin-left: 1.25rem;
+                        }
+                    }
+                    .title_en {
+                        margin-top: 1.19rem;
+                        font-size: 0.88rem;
+                        font-family: Microsoft YaHei, sans-serif;
+                        font-weight: 400;
+                        color: #142847;
+                        line-height: 1.4rem;
+                        display: flex;
+                        justify-content: center;
+                        p + p {
+                            margin-left: 1.25rem;
+                        }
+                    }
+                    .text {
+                        margin-top: 2.5rem;
+                        font-size: 1.13rem;
+                        font-family: Microsoft YaHei, sans-serif;
+                        font-weight: 400;
+                        color: #374e73;
+                        line-height: 1.8rem;
+                        letter-spacing: 1px;
+                        display: flex;
+                        justify-content: center;
+                        text-align: center;
+                    }
+                }
+                .imgBox {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    display: flex;
+                    img {
+                        margin-right: 1rem;
+                        min-width: 10.81rem;
+                        max-width: 10.81rem;
+                        height: 7.25rem;
+                    }
+                }
+            }
+        }
+    }
+}

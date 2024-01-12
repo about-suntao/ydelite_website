@@ -1,0 +1,106 @@
+.dominance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content {
+        width: 88rem;
+        margin-bottom: 6.25rem;
+        h2 {
+            font-size: 2.25rem;
+            font-family: Microsoft YaHei, sans-serif;
+            font-weight: bold;
+            color: #051631;
+            line-height: 2.64rem;
+            letter-spacing: 2px;
+        }
+        h3 {
+            margin-top: 0.44rem;
+            margin-bottom: 2.5rem;
+            font-size: 2rem;
+            font-family: Abhaya Libre, sans-serif;
+            font-weight: 400;
+            color: #1a4588;
+            line-height: 3.2rem;
+            letter-spacing: 2px;
+        }
+        .cardBox {
+            display: flex;
+            justify-content: space-between;
+            .cardLeft {
+                ul {
+                    list-style: none;
+                    li + li {
+                        margin-top: 1.25rem;
+                    }
+                    li {
+                        width: 24.75rem;
+                        height: 3.75rem;
+                        background: #dde5f9;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            min-width: 1.63rem;
+                            max-width: 1.63rem;
+                            height: 1.94rem;
+                        }
+                        p {
+                            margin-left: 2.5rem;
+                            font-size: 1.5rem;
+                            font-family: Microsoft YaHei, sans-serif;
+                            font-weight: 400;
+                            color: #051631;
+                            line-height: 2.4rem;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+            .cardRight {
+                width: 57rem;
+                ul {
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    li {
+                        position: relative;
+                        width: 17.44rem;
+                        height: 11.75rem;
+                        margin-bottom: 4.31rem;
+                        background: #809ce2;
+                        border-radius: 0rem 0rem 0rem 0rem;
+                        opacity: 1;
+                        display: flex;
+                        justify-content: center;
+                        img {
+                            margin-top: 1.31rem;
+                            width: 6.38rem;
+                            height: 6.38rem;
+                        }
+                        .title {
+                            position: absolute;
+                            left: 0;
+                            bottom: -1.5rem;
+                            width: 13.31rem;
+                            height: 3.5rem;
+                            background: #ffffff;
+                            box-shadow: 0rem -0.69rem 0rem 0rem #08428f;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            p {
+                                font-size: 1rem;
+                                font-family: Microsoft YaHei, sans-serif;
+                                font-weight: 400;
+                                color: #051631;
+                                line-height: 1.6rem;
+                                letter-spacing: 1px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
