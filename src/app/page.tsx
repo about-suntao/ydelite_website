@@ -13,7 +13,7 @@ import LatestNews from './home/latestNews/latestNews'
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Banner></Banner>
+      {/* <Banner></Banner>
       <Idea></Idea>
       <Introduce></Introduce>
       <AboutUs></AboutUs>
@@ -23,7 +23,7 @@ export default function Home() {
       <Pedagogical></Pedagogical>
       <Instructor></Instructor>
       <StudyStatus></StudyStatus>
-      <LatestNews></LatestNews>
+      <LatestNews></LatestNews> */}
     </main>
   )
 }

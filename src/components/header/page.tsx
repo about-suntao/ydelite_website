@@ -29,31 +29,45 @@ function Header() {
 
   return (
     <div className={styles.header}>
-      <div className={styles.logoBox}>
-        <ul>
-          {
-            data.map((item) => {
-              return (
-                <li key={item.id}>
-                  <Image src={item.img} alt=''></Image>
-                  <div className={styles.cardRight}>
-                    <p>{item.title}</p>
-                    <p>{item.detail}</p>
-                  </div>
-                </li>
-              )
-            })
-          }
-        </ul>
-        <div className={styles.logo}>
-          <Image src={logoImg} alt=''></Image>
+      <div className={styles.pc}>
+        <div className={styles.logoBox}>
+          <div className={styles.box_c}>
+            <ul>
+              {
+                data.map((item) => {
+                  return (
+                    <li key={item.id}>
+                      <Image src={item.img} alt=''></Image>
+                      <div className={styles.cardRight}>
+                        <p>{item.title}</p>
+                        <p>{item.detail}</p>
+                      </div>
+                    </li>
+                  )
+                })
+              }
+            </ul>
+            <div className={styles.logo}>
+              <Image src={logoImg} alt=''></Image>
+            </div>
+            <div className={styles.search}>
+              <Input size="large" placeholder="Search..." prefix={<SearchOutlined />} />
+            </div>
+          </div>
         </div>
-        <div className={styles.search}>
-          <Input size="large" placeholder="Search..." prefix={<SearchOutlined />} />
+        <div className={styles.nav}>
+          <Nav></Nav>
         </div>
       </div>
-      <div className={styles.nav}>
-        <Nav></Nav>
+      <div className={styles.mobile}>
+        <div className={styles.logoBox}>
+          <div className={styles.logo}>
+            <Image src={logoImg} alt=''></Image>
+          </div>
+        </div>
+        <div className={styles.nav}>
+          <Nav></Nav>
+        </div>
       </div>
     </div>
   )

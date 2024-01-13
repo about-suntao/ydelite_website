@@ -1,36 +1,255 @@
-.menu {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    ul {
-        list-style: none;
+@media screen and (min-width: 1601px) {
+    .menu {
+        width: 100%;
+        height: 100%;
         display: flex;
-        li {
-            width: 10rem;
-            display: flex;
-            justify-content: center;
-            button {
-                border: none;
-                background: transparent;
-            }
-            a {
-                font-size: 1rem;
-                font-family: Microsoft YaHei, sans-serif;
-                font-weight: 400;
-                color: #ffffff;
-                line-height: 1.6rem;
-                letter-spacing: 1px;
-                text-decoration: none;
-            }
-            .active {
-                a {
-                    color: #5bdae2;
+        justify-content: center;
+        align-items: center;
+        .pc {
+            ul {
+                list-style: none;
+                display: flex;
+                li {
+                    width: 10rem;
+                    display: flex;
+                    justify-content: center;
+                    button {
+                        border: none;
+                        background: transparent;
+                    }
+                    a {
+                        font-size: 1rem;
+                        font-family: Microsoft YaHei, sans-serif;
+                        font-weight: 400;
+                        color: #ffffff;
+                        line-height: 1.6rem;
+                        letter-spacing: 1px;
+                        text-decoration: none;
+                    }
+                    .active {
+                        a {
+                            color: #5bdae2;
+                        }
+                    }
+                    a:hover {
+                        color: #5bdae2;
+                    }
                 }
             }
-            a:hover {
-                color: #5bdae2;
+        }
+        .mobile {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1600px) {
+    .menu {
+        width: 100%;
+        height: 100%;
+        .pc {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul {
+                width: 60%;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                li {
+                    display: flex;
+                    justify-content: center;
+                    button {
+                        border: none;
+                        background: transparent;
+                    }
+                    a {
+                        font-size: 1rem;
+                        font-family: Microsoft YaHei, sans-serif;
+                        font-weight: 400;
+                        color: #ffffff;
+                        line-height: 1.6rem;
+                        letter-spacing: 1px;
+                        text-decoration: none;
+                    }
+                    .active {
+                        a {
+                            color: #5bdae2;
+                        }
+                    }
+                    a:hover {
+                        color: #5bdae2;
+                    }
+                }
+            }
+        }
+        .mobile {
+            display: none;
+        }
+    }
+}   
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+    .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .pc {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            ul {
+                width: 60%;
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                li {
+                    display: flex;
+                    justify-content: center;
+                    button {
+                        border: none;
+                        background: transparent;
+                    }
+                    a {
+                        font-size: 1rem;
+                        font-family: Microsoft YaHei, sans-serif;
+                        font-weight: 400;
+                        color: #ffffff;
+                        line-height: 1.6rem;
+                        letter-spacing: 1px;
+                        text-decoration: none;
+                    }
+                    .active {
+                        a {
+                            color: #5bdae2;
+                        }
+                    }
+                    a:hover {
+                        color: #5bdae2;
+                    }
+                }
+            }
+        }
+        .mobile {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .pc {
+            display: none;
+        }
+        .mobile {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            .search {
+                width: 40%;
+                min-width: 9rem;
+                :global {
+                    .ant-input-affix-wrapper {
+                        border-radius: 0;
+                        border: none;
+                        border-bottom: 0.08rem solid #4f6a9c;
+                        background-color: transparent;
+                    }
+                    .anticon {
+                        color: #4f6a9c;
+                    }
+                    .ant-input-affix-wrapper:focus-within {
+                        box-shadow: none;
+                        border-bottom: 0.15rem solid #4f6a9c;
+                    }
+                    .ant-input {
+                        background-color: transparent;
+                        color: #ffffff;
+                    }
+                    .ant-input::placeholder {
+                        color: #4f6a9c;
+                    }
+                }
+            }
+            .menuLogo {
+                width: 2.67rem;
+                height: 2.67rem;
+                background: #0f346a;
+                font-size: 18px;
+                display: flex;
+                justify-content: center;
+            }
+            .mobileNav {
+                position: fixed;
+                top: 8rem;
+                left: 0;
+                height: calc(100vh - 8rem);
+                width: 100vw;
+                z-index: 1000;
+                :global {
+                    .ant-drawer:focus-visible {
+                        outline: none;
+                    }
+                    .ant-drawer-right > .ant-drawer-content-wrapper {
+                        width: 10rem !important;
+                    }
+                    .ant-drawer .ant-drawer-body {
+                        padding: 0;
+                        background: linear-gradient(
+                            180deg,
+                            #081f43 0%,
+                            #041227 100%
+                        );
+                    }
+                }
+                .drawerNav {
+                    ul {
+                        width: 100%;
+                        list-style: none;
+                        padding-top: 3cqh;
+                        li + li {
+                            margin-top: 1.5rem;
+                        }
+                        li {
+                            display: flex;
+                            justify-content: center;
+                            button {
+                                border: none;
+                                background: transparent;
+                            }
+                            a {
+                                font-size: 1.2rem;
+                                font-family: Microsoft YaHei, sans-serif;
+                                font-weight: 400;
+                                color: #ffffff;
+                                line-height: 1.6rem;
+                                letter-spacing: 1px;
+                                text-decoration: none;
+                            }
+                            .active {
+                                a {
+                                    color: #5bdae2;
+                                }
+                            }
+                            a:hover {
+                                color: #5bdae2;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

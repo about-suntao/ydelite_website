@@ -3,9 +3,17 @@ import React, { useState, useEffect } from 'react'
 import styles from './nav.module.scss'
 import Link from 'next/link'
 import { usePathname, useSearchParams } from 'next/navigation'
+import { Input, Drawer } from 'antd';
+import { MenuOutlined, SearchOutlined, LeftOutlined } from '@ant-design/icons';
+
+
 function Nav() {
   const [current, setCurrent] = useState('home');
   const path = usePathname()
+
+  const [open, setOpen] = useState(false);
+  const [pKey, setPKey] = useState('')
+
 
   useEffect(() => {
     if (path === '/') {
@@ -47,21 +55,65 @@ function Nav() {
     setCurrent(key)
   }
 
+
+  const onClose = () => {
+    setOpen(false);
+  };
+
+  const openDrawer = () => {
+    setOpen(!open);
+  }
+
   return (
     <div className={styles.menu}>
-      <ul>
-        {
-          items.map((item, index) => {
-            return (
-              <li key={item?.key} >
-                <button onClick={() => handleActive(item?.key)}>
-                  <span className={`${current === item.key ? styles.active : ''}`}>{item?.label}</span>
-                </button>
-              </li>
-            )
-          })
-        }
-      </ul>
+      <div className={styles.pc}>
+        <ul>
+          {
+            items.map((item, index) => {
+              return (
+                <li key={item?.key} >
+                  <button onClick={() => handleActive(item?.key)}>
+                    <span className={`${current === item.key ? styles.active : ''}`}>{item?.label}</span>
+                  </button>
+                </li>
+              )
+            })
+          }
+        </ul>
+      </div>
+      <div className={styles.mobile}>
+        <div className={styles.search}>
+          <Input size="small" placeholder="Search..." prefix={<SearchOutlined />} />
+        </div>
+        <div className={styles.menuLogo} onClick={openDrawer}>
+          <MenuOutlined />
+        </div>
+        <div className={styles.mobileNav} style={{ display: open ? '' : 'none' }}>
+          <Drawer
+            placement="right"
+            open={open}
+            closable={false}
+            getContainer={false}
+            onClose={onClose}
+          >
+            <div className={styles.drawerNav}>
+              <ul>
+                {
+                  items.map((item, index) => {
+                    return (
+                      <li key={item?.key} >
+                        <button onClick={() => handleActive(item?.key)}>
+                          <span className={`${current === item.key ? styles.active : ''}`}>{item?.label}</span>
+                        </button>
+                      </li>
+                    )
+                  })
+                }
+              </ul>
+            </div>
+          </Drawer>
+        </div>
+      </div>
     </div>
   )
 }
