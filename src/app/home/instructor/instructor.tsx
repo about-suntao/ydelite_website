@@ -62,42 +62,44 @@ function Instructor() {
   ]
 
   return (
-    <div className={styles.pc}>
-      <div className={styles.content}>
-        <div className={styles.title}>
-          <h2>活动导师</h2>
-          <h3>Activity Instructor</h3>
-        </div>
-        <div className={styles.swiperBox}>
-          <Swiper
-            slidesPerView={4}
-            spaceBetween={60}
-            navigation={true}
-            modules={[Virtual, Navigation]}
-            className={styles.mySwiper}
-            virtual
-          >
-            {
-              cardData.map((item) => {
-                return (
-                  <SwiperSlide key={item.id}>
-                    <div className={styles.card}>
-                      <Image src={item.img} alt=''></Image>
-                      <div className={styles.card_c}>
-                        <div className={styles.cardName}>
-                          <p>{item.name}</p>
-                          <span>{item.position}</span>
-                        </div>
-                        <div className={styles.text}>
-                          <span>{item.introduce}</span>
+    <div className={styles.instructor}>
+      <div className={styles.pc}>
+        <div className={styles.content}>
+          <div className={styles.title}>
+            <h2>活动导师</h2>
+            <h3>Activity Instructor</h3>
+          </div>
+          <div className={styles.swiperBox}>
+            <Swiper
+              slidesPerView={4}
+              spaceBetween={30}
+              navigation={true}
+              modules={[Virtual, Navigation]}
+              className={styles.mySwiper}
+              virtual
+            >
+              {
+                cardData.map((item) => {
+                  return (
+                    <SwiperSlide key={item.id}>
+                      <div className={styles.card}>
+                        <Image src={item.img} alt=''></Image>
+                        <div className={styles.card_c}>
+                          <div className={styles.cardName}>
+                            <p>{item.name}</p>
+                            <span>{item.position}</span>
+                          </div>
+                          <div className={styles.text}>
+                            <span>{item.introduce}</span>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </SwiperSlide>
-                )
-              })
-            }
-          </Swiper>
+                    </SwiperSlide>
+                  )
+                })
+              }
+            </Swiper>
+          </div>
         </div>
       </div>
     </div>

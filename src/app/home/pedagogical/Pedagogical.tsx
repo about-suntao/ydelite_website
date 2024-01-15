@@ -1,6 +1,5 @@
 'use client'
-
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './Pedagogical.module.scss'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -13,7 +12,6 @@ import leaderImg4 from '../../../../public/img/home/leader4.png'
 
 
 function Pedagogical() {
-
   const cardData = [
     {
       id: 1,
@@ -45,44 +43,123 @@ function Pedagogical() {
   ]
 
   return (
-    <div className={styles.pc}>
-      <div className={styles.content}>
-        <div className={styles.title}>
-          <h2>教育教学</h2>
-          <h3>Pedagogical</h3>
-        </div>
-        <Swiper
-          slidesPerView={3}
-          spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          {
-            cardData.map((item) => {
-              return (
-                <SwiperSlide key={item.id}>
-                  <div className={styles.card}>
-                    <Image src={item.img} alt=''></Image>
-                    <div className={styles.card_c}>
-                      <div className={styles.cardName}>
-                        <p>{item.name}</p>
-                        <span>{item.position}</span>
-                      </div>
-                      <div className={styles.text}>
-                        <span>{item.introduce}</span>
+    <div className={styles.pedagogical}>
+      <div className={styles.pc}>
+        <div className={styles.content}>
+          <div className={styles.title}>
+            <h2>教育教学</h2>
+            <h3>Pedagogical</h3>
+          </div>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {
+              cardData.map((item) => {
+                return (
+                  <SwiperSlide key={item.id}>
+                    <div className={styles.card}>
+                      <Image src={item.img} alt=''></Image>
+                      <div className={styles.card_c}>
+                        <div className={styles.cardName}>
+                          <p>{item.name}</p>
+                          <span>{item.position}</span>
+                        </div>
+                        <div className={styles.text}>
+                          <span>{item.introduce}</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </SwiperSlide>
-              )
-            })
-          }
-        </Swiper>
+                  </SwiperSlide>
+                )
+              })
+            }
+          </Swiper>
+        </div>
+      </div>
+      <div className={styles.ipad}>
+        <div className={styles.content}>
+          <div className={styles.title}>
+            <h2>教育教学</h2>
+            <h3>Pedagogical</h3>
+          </div>
+          <Swiper
+            slidesPerView={2}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {
+              cardData.map((item) => {
+                return (
+                  <SwiperSlide key={item.id}>
+                    <div className={styles.card}>
+                      <Image src={item.img} alt=''></Image>
+                      <div className={styles.card_c}>
+                        <div className={styles.cardName}>
+                          <p>{item.name}</p>
+                          <span>{item.position}</span>
+                        </div>
+                        <div className={styles.text}>
+                          <span>{item.introduce}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                )
+              })
+            }
+          </Swiper>
+        </div>
+      </div>
+      <div className={styles.mobile}>
+        <div className={styles.content}>
+          <div className={styles.title}>
+            <h2>教育教学</h2>
+            <h3>Pedagogical</h3>
+          </div>
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {
+              cardData.map((item) => {
+                return (
+                  <SwiperSlide key={item.id}>
+                    <div className={styles.card}>
+                      <Image src={item.img} alt=''></Image>
+                      <div className={styles.card_c}>
+                        <div className={styles.cardName}>
+                          <p>{item.name}</p>
+                          <span>{item.position}</span>
+                        </div>
+                        <div className={styles.text}>
+                          <span>{item.introduce}</span>
+                        </div>
+                      </div>
+                    </div>
+                  </SwiperSlide>
+                )
+              })
+            }
+          </Swiper>
+        </div>
       </div>
     </div>
+
   )
 }
 

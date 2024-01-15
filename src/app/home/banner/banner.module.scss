@@ -1,44 +1,315 @@
-.banner {
-    width: 100%;
-    height: 50rem;
-    background-image: url('https://icon-apply.oss-cn-hangzhou.aliyuncs.com/2024/01/11/877_banner.webp');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    .content {
-        padding-top: 7.88rem;
-        margin-left: 16rem;
-        .logo {
-            width: 16.56rem;
-            height: 3.63rem;
-            img {
-                width: 100%;
-                height: 100%;
+@media screen and (min-width: 1501px) {
+    .banner {
+        .pc {
+            width: 100%;
+            height: 50rem;
+            background-image: url('https://icon-apply.oss-cn-hangzhou.aliyuncs.com/2024/01/13/524_banner.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            .content {
+                display: flex;
+                padding-left: 5rem;
+                .left {
+                    margin-top: 7.88rem;
+                    .logo {
+                        width: 16.56rem;
+                        height: 3.63rem;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    h1 {
+                        margin-top: 2.8rem;
+                        font-size: 5rem;
+                        font-family: GemunuLibre-ExtraBold, sans-serif;
+                        font-weight: 400;
+                        color: #ffffff;
+                        line-height: 5.86rem;
+                    }
+                    h2 {
+                        margin-top: 1.5rem;
+                        font-size: 2.5rem;
+                        font-family: Abhaya Libre, sans-serif;
+                        font-weight: 400;
+                        color: #ffffff;
+                        line-height: 4rem;
+                        letter-spacing: 3px;
+                    }
+                    p {
+                        margin-top: 1.8rem;
+                        font-size: 2rem;
+                        font-family: Source Han Sans SC VF, sans-serif;
+                        font-weight: 500;
+                        color: #ffffff;
+                        line-height: 2.34rem;
+                    }
+                }
+                .right {
+                    margin-top: 10rem;
+                    width: 45.63rem;
+                    height: 35.88rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
             }
         }
-        h1 {
-            margin-top: 2.8rem;
-            font-size: 5rem;
-            font-family: GemunuLibre-ExtraBold, sans-serif;
-            font-weight: 400;
-            color: #ffffff;
-            line-height: 5.86rem;
+    }
+}
+
+@media screen and (min-width: 1301px) and (max-width: 1500px) {
+    .banner {
+        .pc {
+            width: 100%;
+            height: 50rem;
+            background-image: url('https://icon-apply.oss-cn-hangzhou.aliyuncs.com/2024/01/13/524_banner.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            .content {
+                display: flex;
+                .left {
+                    margin-top: 7.88rem;
+                    .logo {
+                        width: 16.56rem;
+                        height: 3.63rem;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    h1 {
+                        margin-top: 2.8rem;
+                        font-size: 4.5rem;
+                        font-family: GemunuLibre-ExtraBold, sans-serif;
+                        font-weight: 400;
+                        color: #ffffff;
+                        line-height: 5.86rem;
+                    }
+                    h2 {
+                        margin-top: 1.5rem;
+                        font-size: 2.1rem;
+                        font-family: Abhaya Libre, sans-serif;
+                        font-weight: 400;
+                        color: #ffffff;
+                        line-height: 4rem;
+                        letter-spacing: 3px;
+                    }
+                    p {
+                        margin-top: 1.8rem;
+                        font-size: 1.9rem;
+                        font-family: Source Han Sans SC VF, sans-serif;
+                        font-weight: 500;
+                        color: #ffffff;
+                        line-height: 2.34rem;
+                    }
+                }
+                .right {
+                    margin-top: 10rem;
+                    width: 43rem;
+                    height: 33rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
         }
-        h2 {
-            margin-top: 1.5rem;
-            font-size: 2.5rem;
-            font-family: Abhaya Libre, sans-serif;
-            font-weight: 400;
-            color: #ffffff;
-            line-height: 4rem;
-            letter-spacing: 3px;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1300px) {
+    .banner {
+        .pc {
+            width: 100%;
+            height: 46rem;
+            background-image: url('https://icon-apply.oss-cn-hangzhou.aliyuncs.com/2024/01/13/524_banner.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            .content {
+                width: 96%;
+                display: flex;
+                .left {
+                    margin-top: 7.88rem;
+                    .logo {
+                        width: 16.56rem;
+                        height: 3.63rem;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    h1 {
+                        margin-top: 2.8rem;
+                        font-size: 4rem;
+                        font-family: GemunuLibre-ExtraBold, sans-serif;
+                        font-weight: 400;
+                        color: #ffffff;
+                        line-height: 5.86rem;
+                    }
+                    h2 {
+                        margin-top: 1.5rem;
+                        font-size: 1.8rem;
+                        font-family: Abhaya Libre, sans-serif;
+                        font-weight: 400;
+                        color: #ffffff;
+                        line-height: 4rem;
+                        letter-spacing: 3px;
+                    }
+                    p {
+                        margin-top: 1.8rem;
+                        font-size: 1.6rem;
+                        font-family: Source Han Sans SC VF, sans-serif;
+                        font-weight: 500;
+                        color: #ffffff;
+                        line-height: 2.34rem;
+                    }
+                }
+                .right {
+                    margin-top: 9em;
+                    width: 38rem;
+                    height: auto;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
         }
-        p {
-            margin-top: 1.8rem;
-            font-size: 2rem;
-            font-family: Source Han Sans SC VF, sans-serif;
-            font-weight: 500;
-            color: #ffffff;
-            line-height: 2.34rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+    .banner {
+        .pc {
+            width: 100%;
+            height: 40rem;
+            background-image: url('https://icon-apply.oss-cn-hangzhou.aliyuncs.com/2024/01/13/524_banner.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            .content {
+                width: 96%;
+                display: flex;
+                .left {
+                    margin-top: 7.88rem;
+                    .logo {
+                        width: 16.56rem;
+                        height: 3.63rem;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    h1 {
+                        margin-top: 2rem;
+                        font-size: 3rem;
+                        font-family: GemunuLibre-ExtraBold, sans-serif;
+                        font-weight: 400;
+                        color: #ffffff;
+                        line-height: 5.86rem;
+                    }
+                    h2 {
+                        margin-top: 1rem;
+                        font-size: 1.6rem;
+                        font-family: Abhaya Libre, sans-serif;
+                        font-weight: 400;
+                        color: #ffffff;
+                        line-height: 3rem;
+                        letter-spacing: 3px;
+                    }
+                    p {
+                        margin-top: 1.2rem;
+                        font-size: 1.4rem;
+                        font-family: Source Han Sans SC VF, sans-serif;
+                        font-weight: 500;
+                        color: #ffffff;
+                        line-height: 2.34rem;
+                    }
+                }
+                .right {
+                    margin-top: 9em;
+                    width: 38rem;
+                    height: auto;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        .pc {
+            width: 100%;
+            background-image: url('https://icon-apply.oss-cn-hangzhou.aliyuncs.com/2024/01/13/524_banner.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            padding: 1.33rem;
+            .content {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                .left {
+                    margin-top: 4.92rem;
+                    .logo {
+                        width: 14.58rem;
+                        height: 3.17rem;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    h1 {
+                        margin-top: 1.75rem;
+                        font-size: 3.33rem;
+                        font-family: Gemunu Libre ExtraBold, sans-serif;
+                        font-weight: 400;
+                        color: #ffffff;
+                        line-height: 3.91rem;
+                    }
+                    h2 {
+                        margin-top: 0.83rem;
+                        font-size: 1.33rem;
+                        font-family: Abhaya Libre, sans-serif;
+                        font-weight: 400;
+                        color: #ffffff;
+                        line-height: 2.13rem;
+                        letter-spacing: 1px;
+                    }
+                    p {
+                        margin-top: 0.83rem;
+                        font-size: 1.17rem;
+                        font-family: Source Han Sans SC VF, sans-serif;
+                        font-weight: 500;
+                        color: #ffffff;
+                        line-height: 1.37rem;
+                    }
+                }
+                .right {
+                    margin-top: 3.33em;
+                    width: 24.61rem;
+                    height: 22.44rem;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
         }
     }
 }

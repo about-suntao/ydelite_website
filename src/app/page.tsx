@@ -16,13 +16,13 @@ export default function Home() {
       {/* <Banner></Banner>
       <Idea></Idea>
       <Introduce></Introduce>
-      <AboutUs></AboutUs>
-      <Introduction></Introduction>
-      <Video></Video>
-      <InternationalClass></InternationalClass>
-      <Pedagogical></Pedagogical>
+      <AboutUs></AboutUs> */}
+      {/* <Introduction></Introduction> */}
+      {/* <Video></Video>
+      <InternationalClass></InternationalClass> */}
+      {/* <Pedagogical></Pedagogical> */}
       <Instructor></Instructor>
-      <StudyStatus></StudyStatus>
+      {/* <StudyStatus></StudyStatus>
       <LatestNews></LatestNews> */}
     </main>
   )

@@ -29,25 +29,27 @@ function About() {
 
   return (
     <div className={styles.idea}>
-      <ul>
-        {
-          data.map((item) => {
-            return (
-              <li key={item.id}>
-                <div className={styles.card}>
-                  <div className={styles.left}>
-                    <Image src={item.img} alt=""></Image>
+      <div className={styles.pc}>
+        <ul>
+          {
+            data.map((item) => {
+              return (
+                <li key={item.id}>
+                  <div className={styles.card}>
+                    <div className={styles.left}>
+                      <Image src={item.img} alt=""></Image>
+                    </div>
+                    <div className={styles.right}>
+                      <h3>{item.title}</h3>
+                      <p>{item.details}</p>
+                    </div>
                   </div>
-                  <div className={styles.right}>
-                    <h3>{item.title}</h3>
-                    <p>{item.details}</p>
-                  </div>
-                </div>
-              </li>
-            )
-          })
-        }
-      </ul>
+                </li>
+              )
+            })
+          }
+        </ul>
+      </div>
     </div>
   )
 }

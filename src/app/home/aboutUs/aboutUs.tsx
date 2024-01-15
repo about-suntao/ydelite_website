@@ -42,31 +42,64 @@ function AboutUs() {
 
   return (
     <div className={styles.aboutUs}>
-      <div className={styles.content}>
-        <h2>走进云顶</h2>
-        <h3>About us</h3>
-        <div className={styles.card}>
-          <hr />
-          <ul>
-            {
-              cardData.map((item) => {
-                return (
-                  <li key={item.id}>
-                    <div className={styles.logo}>
-                      <div className={styles.logoBox}>
-                        <Image src={item.img} alt=''></Image>
+      <div className={styles.pc}>
+        <div className={styles.content}>
+          <h2>走进云顶</h2>
+          <h3>About us</h3>
+          <div className={styles.card}>
+            <hr />
+            <ul>
+              {
+                cardData.map((item) => {
+                  return (
+                    <li key={item.id}>
+                      <div className={styles.logo}>
+                        <div className={styles.logoBox}>
+                          <Image src={item.img} alt=''></Image>
+                        </div>
                       </div>
-                    </div>
-                    <div className={styles.number}>
-                      <span>{item.num}</span>
-                      <span>{item.symbol}</span>
-                    </div>
-                    <p>{item.title}</p>
-                  </li>
-                )
-              })
-            }
-          </ul>
+                      <div className={styles.number}>
+                        <span>{item.num}</span>
+                        <span>{item.symbol}</span>
+                      </div>
+                      <p>{item.title}</p>
+                    </li>
+                  )
+                })
+              }
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className={styles.mobile}>
+        <div className={styles.content}>
+          <h2>走进云顶</h2>
+          <h3>About us</h3>
+          <div className={styles.card}>
+            <hr />
+            <ul>
+              {
+                cardData.map((item) => {
+                  return (
+                    <li key={item.id}>
+                      <div className={styles.logo}>
+                        <div className={styles.logoBox}>
+                          <Image src={item.img} alt=''></Image>
+                        </div>
+                      </div>
+                      <div className={styles.cardRight}>
+                        <div className={styles.number}>
+                          <span>{item.num}</span>
+                          <span>{item.symbol}</span>
+                        </div>
+                        <p>{item.title}</p>
+                      </div>
+                    </li>
+                  )
+                })
+              }
+            </ul>
+          </div>
         </div>
       </div>
     </div>
