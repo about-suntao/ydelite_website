@@ -1,7 +1,11 @@
 @media screen and (min-width: 1001px) {
     .aboutUs {
         width: 100%;
+        display: flex;
+        justify-content: center;
         .pc {
+            max-width: 120rem;
+            width: 100%;
             display: flex;
             justify-content: center;
             .content {

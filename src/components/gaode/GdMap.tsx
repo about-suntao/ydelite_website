@@ -4,7 +4,6 @@ import AMapLoader from "@amap/amap-jsapi-loader";
 
 export default function MapContainer() {
 
-  const centerPoint = [116.434833, 39.948550]
 
   useEffect(() => {
     let map: any = null
@@ -14,6 +13,8 @@ export default function MapContainer() {
       plugins: [], // 需要使用的的插件列表，如比例尺'AMap.Scale'等
     })
       .then((AMap) => {
+        const centerPoint = [116.434833, 39.948550]
+
         map = new AMap.Map("container", {
           // 设置地图容器id
           viewMode: "2D", // 是否为3D地图模式

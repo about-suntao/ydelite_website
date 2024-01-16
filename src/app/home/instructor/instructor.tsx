@@ -104,21 +104,22 @@ function CarouselBox(props: ICarouselType) {
 function Instructor() {
   const [cardNum, setCardNum] = useState(4)
 
-  const [windowWdith, setWindowWdith] = useState(document.body.offsetWidth + 17);
+  const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
+    setWindowWidth(document.body.offsetWidth + 17)
     // 监屏幕宽度
-    window.addEventListener("resize", () => setWindowWdith(document.body.offsetWidth + 17))
+    window.addEventListener("resize", () => setWindowWidth(document.body.offsetWidth + 17))
     // 销毁
-    return () => window.removeEventListener("resize", () => setWindowWdith(0));
-  });
+    return () => window.removeEventListener("resize", () => setWindowWidth(0));
+  }, []);
 
   useEffect(() => {
     // 根据屏幕宽度改变swiper 显示数量
-    windowWdith >= 1601 ? setCardNum(4) :
-      windowWdith < 1601 && windowWdith >= 1201 ? setCardNum(3) :
-        windowWdith < 1201 && windowWdith >= 769 ? setCardNum(2) : setCardNum(1)
-  }, [windowWdith])
+    windowWidth >= 1601 ? setCardNum(4) :
+      windowWidth < 1601 && windowWidth >= 1201 ? setCardNum(3) :
+        windowWidth < 1201 && windowWidth >= 769 ? setCardNum(2) : setCardNum(1)
+  }, [windowWidth])
   return (
     <div className={styles.instructor}>
       <div className={styles.pc}>
