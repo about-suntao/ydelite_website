@@ -13,17 +13,17 @@ import LatestNews from './home/latestNews/latestNews'
 export default function Home() {
   return (
     <main className={styles.main}>
-      {/* <Banner></Banner>
+      <Banner></Banner>
       <Idea></Idea>
       <Introduce></Introduce>
-      <AboutUs></AboutUs> */}
-      {/* <Introduction></Introduction> */}
-      {/* <Video></Video>
-      <InternationalClass></InternationalClass> */}
-      {/* <Pedagogical></Pedagogical> */}
+      <AboutUs></AboutUs>
+      <Introduction></Introduction>
+      <Video></Video>
+      <InternationalClass></InternationalClass>
+      <Pedagogical></Pedagogical>
       <Instructor></Instructor>
-      {/* <StudyStatus></StudyStatus>
-      <LatestNews></LatestNews> */}
+      <StudyStatus></StudyStatus>
+      <LatestNews></LatestNews>
     </main>
   )
 }

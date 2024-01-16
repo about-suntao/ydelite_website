@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './studyStatus.module.scss'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -20,7 +20,9 @@ import logoImg11 from '../../../../public/img/home/school/logo11.png'
 
 import schoolImg from '../../../../public/img/home/schoollmg.png'
 
-function StudyStatus() {
+
+function CarouselBox(props: any) {
+
   const cardData = [
     {
       id: 1,
@@ -92,44 +94,70 @@ function StudyStatus() {
   ]
 
   return (
+    <div className={styles.swiperBox}>
+      <Swiper
+        slidesPerView={props.cardRenderNum}
+        grid={{ rows: props.gridNum }}
+        spaceBetween={30}
+        pagination={{ clickable: true }}
+        modules={[Grid, Pagination]}
+        className={styles.mySwiper}
+      >
+        {
+          cardData.map((item) => {
+            return (
+              <SwiperSlide key={item.id}>
+                <div className={styles.card}>
+                  <div className={styles.cardLft}>
+                    <Image src={item.logo} alt=''></Image>
+                  </div>
+                  <div className={styles.cardCenter}>
+                    <p>{item.name}</p>
+                    <span>{item.index}</span>
+                    <p>{item.num}</p>
+                  </div>
+                  <div className={styles.cardRight}>
+                    <Image src={schoolImg} alt=''></Image>
+                  </div>
+                </div>
+              </SwiperSlide>
+            )
+          })
+        }
+      </Swiper>
+    </div>
+  )
+}
+
+
+function StudyStatus() {
+
+
+  const [cardNum, setCardNum] = useState(3)
+
+  const [windowWdith, setWindowWdith] = useState(document.body.offsetWidth + 17);
+
+  useEffect(() => {
+    // 监屏幕宽度
+    window.addEventListener("resize", () => setWindowWdith(document.body.offsetWidth + 17))
+    // 销毁
+    return () => window.removeEventListener("resize", () => setWindowWdith(0));
+  });
+
+  useEffect(() => {
+    // 根据屏幕宽度改变swiper 显示数量
+    windowWdith >= 1501 ? setCardNum(3) :
+      windowWdith < 1501 && windowWdith >= 769 ? setCardNum(2) : setCardNum(1)
+  }, [windowWdith])
+
+  return (
     <div className={styles.pc}>
       <div className={styles.content}>
         <div className={styles.title}>
           <h2>近年升学情况</h2>
           <h3>Progression status</h3>
         </div>
-        <div className={styles.swiperBox}>
-          <Swiper
-            slidesPerView={3}
-            grid={{ rows: 2 }}
-            spaceBetween={30}
-            pagination={{ clickable: true }}
-            modules={[Grid, Pagination]}
-            className={styles.mySwiper}
-          >
-            {
-              cardData.map((item) => {
-                return (
-                  <SwiperSlide key={item.id}>
-                    <div className={styles.card}>
-                      <div className={styles.cardLft}>
-                        <Image src={item.logo} alt=''></Image>
-                      </div>
-                      <div className={styles.cardCenter}>
-                        <p>{item.name}</p>
-                        <span>{item.index}</span>
-                        <p>{item.num}</p>
-                      </div>
-                      <div className={styles.cardRight}>
-                        <Image src={schoolImg} alt=''></Image>
-                      </div>
-                    </div>
-                  </SwiperSlide>
-                )
-              })
-            }
-          </Swiper>
-        </div>
+        <CarouselBox cardRenderNum={cardNum} gridNum={cardNum === 1 ? 3 : 2}></CarouselBox>
       </div>
     </div>
   )

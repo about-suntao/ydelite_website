@@ -544,6 +544,10 @@
 @media screen and (max-width: 768px) {
     .header {
         width: 100%;
+        position: sticky;
+        left: 0;
+        top: 0;
+        z-index: 1000;
         .pc {
             display: none;
         }
@@ -551,6 +555,7 @@
             .logoBox {
                 width: 100%;
                 height: 3.67rem;
+                background-color: #ffffff;
                 display: flex;
                 justify-content: center;
                 align-items: center;

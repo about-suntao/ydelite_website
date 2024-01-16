@@ -1,10 +1,9 @@
 'use client'
-
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './instructor.module.scss'
 import Image from 'next/image'
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Virtual, Navigation } from 'swiper/modules';
+import { Virtual, Navigation, Pagination } from 'swiper/modules';
 
 import item1 from '../../../../public/img/home/activity1.png'
 import item2 from '../../../../public/img/home/activity2.png'
@@ -14,7 +13,12 @@ import item5 from '../../../../public/img/home/activity5.png'
 import item6 from '../../../../public/img/home/activity6.png'
 import item7 from '../../../../public/img/home/activity7.png'
 
-function Instructor() {
+interface ICarouselType {
+  cardRenderNum: number
+  isNavigation: boolean
+}
+
+function CarouselBox(props: ICarouselType) {
   const cardData = [
     {
       id: 1,
@@ -60,46 +64,70 @@ function Instructor() {
       introduce: '北京大学光华管理学院商务统计与经济计量系副教授，中国科技大学学士，美国罗格斯大学统计学博士学位。',
     },
   ]
+  return (
+    <div className={styles.swiperBox}>
+      <Swiper
+        slidesPerView={props.cardRenderNum}
+        spaceBetween={30}
+        navigation={props.isNavigation}
+        pagination={!props.isNavigation}
+        modules={[Virtual, Navigation, Pagination]}
+        className={styles.mySwiper}
+        virtual
+      >
+        {
+          cardData.map((item) => {
+            return (
+              <SwiperSlide key={item.id}>
+                <div className={styles.card}>
+                  <Image src={item.img} alt=''></Image>
+                  <div className={styles.card_c}>
+                    <div className={styles.cardName}>
+                      <p>{item.name}</p>
+                      <span>{item.position}</span>
+                    </div>
+                    <div className={styles.text}>
+                      <span>{item.introduce}</span>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            )
+          })
+        }
+      </Swiper>
+    </div>
+  )
+}
 
+
+function Instructor() {
+  const [cardNum, setCardNum] = useState(4)
+
+  const [windowWdith, setWindowWdith] = useState(document.body.offsetWidth + 17);
+
+  useEffect(() => {
+    // 监屏幕宽度
+    window.addEventListener("resize", () => setWindowWdith(document.body.offsetWidth + 17))
+    // 销毁
+    return () => window.removeEventListener("resize", () => setWindowWdith(0));
+  });
+
+  useEffect(() => {
+    // 根据屏幕宽度改变swiper 显示数量
+    windowWdith >= 1601 ? setCardNum(4) :
+      windowWdith < 1601 && windowWdith >= 1201 ? setCardNum(3) :
+        windowWdith < 1201 && windowWdith >= 769 ? setCardNum(2) : setCardNum(1)
+  }, [windowWdith])
   return (
     <div className={styles.instructor}>
       <div className={styles.pc}>
         <div className={styles.content}>
           <div className={styles.title}>
-            <h2>活动导师</h2>
+            <h2>活动导师 </h2>
             <h3>Activity Instructor</h3>
           </div>
-          <div className={styles.swiperBox}>
-            <Swiper
-              slidesPerView={4}
-              spaceBetween={30}
-              navigation={true}
-              modules={[Virtual, Navigation]}
-              className={styles.mySwiper}
-              virtual
-            >
-              {
-                cardData.map((item) => {
-                  return (
-                    <SwiperSlide key={item.id}>
-                      <div className={styles.card}>
-                        <Image src={item.img} alt=''></Image>
-                        <div className={styles.card_c}>
-                          <div className={styles.cardName}>
-                            <p>{item.name}</p>
-                            <span>{item.position}</span>
-                          </div>
-                          <div className={styles.text}>
-                            <span>{item.introduce}</span>
-                          </div>
-                        </div>
-                      </div>
-                    </SwiperSlide>
-                  )
-                })
-              }
-            </Swiper>
-          </div>
+          <CarouselBox cardRenderNum={cardNum} isNavigation={cardNum !== 1}></CarouselBox>
         </div>
       </div>
     </div>
