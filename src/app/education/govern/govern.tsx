@@ -2,6 +2,8 @@
 import React, { useState } from 'react'
 import styles from './govern.module.scss'
 import Image from 'next/image'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 
 import leaderImg1 from '../../../../public/img/home/leader1.png'
 import leaderImg2 from '../../../../public/img/home/leader2.png'
@@ -64,41 +66,80 @@ function Govern() {
 
   return (
     <div className={styles.govern}>
-      <div className={styles.content}>
-        <div className={styles.title}>
-          <h2>专家治校</h2>
-          <p>School Governance Specialist</p>
+      <div className={styles.pc}>
+        <div className={styles.content}>
+          <div className={styles.title}>
+            <h2>专家治校</h2>
+            <p>School Governance Specialist</p>
+          </div>
+          <div className={styles.cardBox}>
+            <div className={styles.left}>
+              <Image src={cardData[0].img} alt={cardData[0].name}></Image>
+            </div>
+            <div className={styles.right}>
+              <div className={styles.right_content}>
+                <div className={styles.title_zn}>
+                  <p>{cardData[0].position}</p>
+                  <p>{cardData[0].name}</p>
+                </div>
+                <div className={styles.title_en}>
+                  <p>{cardData[0].position_en}</p>
+                  <p>{cardData[0].spell}</p>
+                </div>
+                <div className={styles.text}>
+                  <p>{cardData[0].introduce}</p>
+                </div>
+              </div>
+              <div className={styles.imgBox}>
+                {
+                  cardData.slice(1).map((item: any) => {
+                    return (
+                      <div key={item.id} className={styles.img}>
+                        <Image src={item.img} alt={item.name} onClick={() => handleActive(item.id)}></Image>
+                      </div>
+                    )
+                  })
+                }
+              </div>
+            </div>
+          </div>
         </div>
-        <div className={styles.cardBox}>
-          <div className={styles.left}>
-            <Image src={cardData[0].img} alt={cardData[0].name}></Image>
+      </div>
+      <div className={styles.mobile}>
+        <div className={styles.content}>
+          <div className={styles.title}>
+            <h2>专家治校</h2>
+            <h3>School Governance Specialist</h3>
           </div>
-          <div className={styles.right}>
-            <div className={styles.right_content}>
-              <div className={styles.title_zn}>
-                <p>{cardData[0].position}</p>
-                <p>{cardData[0].name}</p>
-              </div>
-              <div className={styles.title_en}>
-                <p>{cardData[0].position_en}</p>
-                <p>{cardData[0].spell}</p>
-              </div>
-              <div className={styles.text}>
-                <p>{cardData[0].introduce}</p>
-              </div>
-            </div>
-            <div className={styles.imgBox}>
-              {
-                cardData.slice(1).map((item: any) => {
-                  return (
-                    <div key={item.id} className={styles.img}>
-                      <Image src={item.img} alt={item.name} onClick={() => handleActive(item.id)}></Image>
+          <Swiper
+            slidesPerView={1}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="mySwiper"
+          >
+            {
+              cardData.map((item) => {
+                return (
+                  <SwiperSlide key={item.id}>
+                    <div className={styles.card}>
+                      <Image src={item.img} alt=''></Image>
+                      <div className={styles.card_c}>
+                        <div className={styles.cardName}>
+                          <p>{item.name}</p>
+                          <span>{item.position}</span>
+                        </div>
+                        <div className={styles.text}>
+                          <span>{item.introduce}</span>
+                        </div>
+                      </div>
                     </div>
-                  )
-                })
-              }
-            </div>
-          </div>
+                  </SwiperSlide>
+                )
+              })
+            }
+          </Swiper>
         </div>
       </div>
     </div>

@@ -1,5 +1,5 @@
 'use client'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './foreignTeachers.module.scss'
 import Image from 'next/image'
 
@@ -24,10 +24,7 @@ import serialP4 from '../../../../public/img/edu/serialP4.png'
 import icon from '../../../../public/img/edu/icon.png'
 import honorLogo from '../../../../public/img/edu/honor_logo.png'
 
-
-
-
-function ForeignTeachers() {
+function CarouselBox(props: any) {
 
   const teamData = [
     {
@@ -64,6 +61,124 @@ function ForeignTeachers() {
       serialNumber: serialP4,
     },
   ]
+
+  return (
+    <Swiper
+      slidesPerView={props.cardRenderNum}
+      spaceBetween={30}
+      pagination={{
+        clickable: true,
+      }}
+      modules={[Pagination]}
+      className="mySwiper"
+    >
+      {
+        teamData.map((item) => {
+          return (
+            <SwiperSlide key={item.id}>
+              <div className={styles.PcCard}>
+                <div className={styles.details_left}>
+                  <Image src={item.picture} alt={item.name}></Image>
+                </div>
+                <div className={styles.details_right}>
+                  <div className={styles.name}>
+                    <p>{item.name}</p>
+                    <Image src={icon} alt=''></Image>
+                  </div>
+                  <div className={styles.honor}>
+                    <div className={styles.h_left}>
+                      {
+                        item.honor.map((item, index) => {
+                          return (
+                            <div key={index} className={styles.tips}>
+                              <Image src={honorLogo} alt=''></Image>
+                              <p >{item}</p>
+                              <Image src={honorLogo} alt=''></Image>
+                            </div>
+                          )
+                        })
+                      }
+                    </div>
+                    <div className={styles.h_right}>
+                      <Image src={item.signature} alt=''></Image>
+                    </div>
+                    <hr />
+                  </div>
+                  <div className={styles.introduce}>
+                    <span>{item.introduce}</span>
+                  </div>
+                  <div className={styles.serial}>
+                    <Image src={item.serialNumber} alt=''></Image>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.MobileCard}>
+                <div className={styles.details_top}>
+                  <div className={styles.d_t_l}>
+                    <Image src={item.picture} alt={item.name}></Image>
+                  </div>
+                  <div className={styles.d_t_c}>
+                    <div className={styles.name}>
+                      <p>{item.name}</p>
+                    </div>
+                    <div className={styles.honor}>
+                      {
+                        item.honor.map((item, index) => {
+                          return (
+                            <div key={index} className={styles.tips}>
+                              <Image src={honorLogo} alt=''></Image>
+                              <p >{item}</p>
+                              <Image src={honorLogo} alt=''></Image>
+                            </div>
+                          )
+                        })
+                      }
+                    </div>
+                  </div>
+                  <div className={styles.d_t_r}>
+                    <Image src={icon} alt=''></Image>
+                    <hr />
+                    <Image src={item.serialNumber} alt=''></Image>
+                  </div>
+                </div>
+                <div className={styles.details_bottom}>
+                  <div className={styles.introduce}>
+                    <span>{item.introduce}</span>
+                  </div>
+                  <div className={styles.signature}>
+                    <Image src={item.signature} alt=''></Image>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+          )
+        })
+      }
+    </Swiper>
+  )
+}
+
+
+
+function ForeignTeachers() {
+
+  const [cardNum, setCardNum] = useState(2)
+
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    setWindowWidth(document.body.offsetWidth + 17)
+    // 监屏幕宽度
+    window.addEventListener("resize", () => setWindowWidth(document.body.offsetWidth + 17))
+    // 销毁
+    return () => window.removeEventListener("resize", () => setWindowWidth(0));
+  }, []);
+
+  useEffect(() => {
+    // 根据屏幕宽度改变swiper 显示数量
+    windowWidth >= 1601 ? setCardNum(2) : setCardNum(1)
+  }, [windowWidth])
+
   return (
     <div className={styles.teacher}>
       <div className={styles.content}>
@@ -71,60 +186,7 @@ function ForeignTeachers() {
           <h2>外方教师及升学顾问</h2>
           <h3>Foreign Teachers and Counselors</h3>
         </div>
-        <Swiper
-          slidesPerView={2}
-          spaceBetween={30}
-          pagination={{
-            clickable: true,
-          }}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          {
-            teamData.map((item) => {
-              return (
-                <SwiperSlide key={item.id}>
-                  <div className={styles.card}>
-                    <div className={styles.details_left}>
-                      <Image src={item.picture} alt={item.name}></Image>
-                    </div>
-                    <div className={styles.details_right}>
-                      <div className={styles.name}>
-                        <p>{item.name}</p>
-                        <Image src={icon} alt=''></Image>
-                      </div>
-                      <div className={styles.honor}>
-                        <div className={styles.h_left}>
-                          {
-                            item.honor.map((item, index) => {
-                              return (
-                                <div key={index} className={styles.tips}>
-                                  <Image src={honorLogo} alt=''></Image>
-                                  <p >{item}</p>
-                                  <Image src={honorLogo} alt=''></Image>
-                                </div>
-                              )
-                            })
-                          }
-                        </div>
-                        <div className={styles.h_right}>
-                          <Image src={item.signature} alt=''></Image>
-                        </div>
-                        <hr />
-                      </div>
-                      <div className={styles.introduce}>
-                        <span>{item.introduce}</span>
-                      </div>
-                      <div className={styles.serial}>
-                        <Image src={item.serialNumber} alt=''></Image>
-                      </div>
-                    </div>
-                  </div>
-                </SwiperSlide>
-              )
-            })
-          }
-        </Swiper>
+        <CarouselBox cardRenderNum={cardNum}></CarouselBox>
       </div>
     </div>
   )
