@@ -6,8 +6,8 @@ import Apply from './apply/apply'
 function AdmissionSituation() {
   return (
     <div>
-      {/* <BannerComponents name='Progression Status'></BannerComponents> */}
-      {/* <ProgressionStatus></ProgressionStatus> */}
+      <BannerComponents name='Progression Status'></BannerComponents>
+      <ProgressionStatus></ProgressionStatus>
       <Apply></Apply>
     </div>
   )
