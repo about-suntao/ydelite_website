@@ -1,6 +1,6 @@
 import React from 'react'
 import BannerComponents from '@/components/bannerComponents/banner'
-import Introduce from '../home/introduce/introduce'
+import Introduce from './introduce/introduce'
 import AboutUs from '../home/aboutUs/aboutUs'
 import Playground from './playground/playground'
 import Govern from './govern/govern'

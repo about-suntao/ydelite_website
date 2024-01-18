@@ -1,7 +1,5 @@
 import React from 'react'
 import styles from './introduce.module.scss'
-import Image from 'next/image'
-import Link from 'next/link'
 
 function Introduce() {
   return (
@@ -19,9 +17,7 @@ function Introduce() {
               云顶精英国际高中经深圳市教育局批准开设“国际课程实验班”，搭建对外交流合作平台，拓宽云顶学子升学渠道。</p>
             <p>2023年，原广大附中AP国际部核心团队加盟云顶精英国际高中，依托中科大校友基金会全球知名校友与教授网络，在深圳打造一所全体系，高品质，强出口的国际化学校新旗舰。</p>
           </div>
-          <Link href="/about">
-            <button>learn more</button>
-          </Link>
+          <button>立即申请</button>
         </div>
       </div>
     </div>
