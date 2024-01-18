@@ -53,6 +53,7 @@ function Nav() {
 
   const handleActive = (key: string) => {
     setCurrent(key)
+    onClose()
   }
 
 
