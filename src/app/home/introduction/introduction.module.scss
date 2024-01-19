@@ -33,13 +33,13 @@
                         margin-left: 8.19rem;
                     }
                     li {
-                        width: 33.94rem;
-                        height: 39.69rem;
+                        width: 39rem;
+                        height: 49rem;
                         background: #ffffff;
                         border-radius: 0rem 0rem 0rem 0rem;
                         opacity: 1;
                         border: 0.06rem solid #051631;
-                        padding: 1.5rem;
+                        padding: 1.63rem 2.2rem;
                         .titleImg {
                             position: relative;
                             img {
@@ -59,7 +59,7 @@
                         }
                         .img {
                             margin-top: -3rem;
-                            margin-bottom: 2rem;
+                            margin-bottom: 1.44rem;
                             width: 100%;
                             img {
                                 width: 100%;
@@ -67,22 +67,36 @@
                             }
                         }
                         .card_c {
-                            width: 25rem;
+                            width: 100%;
                             margin: 0 auto;
                             h2 {
+                                margin-bottom: 0.75rem;
                                 font-size: 1.5rem;
                                 font-family: Microsoft YaHei, sans-serif;
                                 font-weight: bold;
                                 color: #051631;
                                 line-height: 2.4rem;
                             }
+                            h3 {
+                                width: 9.24rem;
+                                height: 2.19rem;
+                                padding: 0.25rem 1.06rem;
+                                background: #0c2a58;
+                                border-radius: 0.25rem;
+                                font-size: 1rem;
+                                font-family: Microsoft YaHei, sans-serif;
+                                font-weight: bold;
+                                color: #ffffff;
+                                line-height: 1.6rem;
+                            }
                             p {
-                                margin-top: 1.75rem;
-                                font-size: 1.25rem;
+                                margin-top: 0.63rem;
+                                margin-bottom: 1.25rem;
+                                font-size: 0.88rem;
                                 font-family: Microsoft YaHei, sans-serif;
                                 font-weight: 400;
                                 color: #374e73;
-                                line-height: 2rem;
+                                line-height: 1.4rem;
                             }
                         }
                     }
@@ -97,7 +111,7 @@
         display: flex;
         justify-content: center;
         .content {
-            width: 80%;
+            width: 90%;
             h2 {
                 font-size: 2.25rem;
                 font-family: Microsoft YaHei, sans-serif;
@@ -116,7 +130,7 @@
                 letter-spacing: 2px;
             }
             .card {
-                margin-top: 2.5rem;
+                margin-top: 2rem;
                 margin-bottom: 6.25rem;
                 display: flex;
                 justify-content: center;
@@ -124,10 +138,10 @@
                     list-style: none;
                     display: flex;
                     li + li {
-                        margin-left: 6rem;
+                        margin-left: 2rem;
                     }
                     li {
-                        width: 46%;
+                        width: 49%;
                         background: #ffffff;
                         border-radius: 0rem 0rem 0rem 0rem;
                         opacity: 1;
@@ -152,7 +166,7 @@
                         }
                         .img {
                             margin-top: -3rem;
-                            margin-bottom: 2rem;
+                            margin-bottom: 1rem;
                             width: 100%;
                             img {
                                 width: 100%;
@@ -160,7 +174,7 @@
                             }
                         }
                         .card_c {
-                            width: 25rem;
+                            width: 100%;
                             margin: 0 auto;
                             h2 {
                                 font-size: 1.5rem;
@@ -169,106 +183,26 @@
                                 color: #051631;
                                 line-height: 2.4rem;
                             }
-                            p {
-                                margin-top: 1.75rem;
-                                font-size: 1.25rem;
-                                font-family: Microsoft YaHei, sans-serif;
-                                font-weight: 400;
-                                color: #374e73;
-                                line-height: 2rem;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 1001px) and (max-width: 1400px) {
-    .introduce {
-        display: flex;
-        justify-content: center;
-        .content {
-            width: 80%;
-            h2 {
-                font-size: 2.25rem;
-                font-family: Microsoft YaHei, sans-serif;
-                font-weight: bold;
-                color: #051631;
-                line-height: 2.64rem;
-                letter-spacing: 2px;
-            }
-            h3 {
-                margin-top: 0.44rem;
-                font-size: 2rem;
-                font-family: Abhaya Libre, sans-serif;
-                font-weight: 400;
-                color: #1a4588;
-                line-height: 3.2rem;
-                letter-spacing: 2px;
-            }
-            .card {
-                margin-top: 2.5rem;
-                margin-bottom: 6.25rem;
-                display: flex;
-                justify-content: center;
-                ul {
-                    list-style: none;
-                    display: flex;
-                    li + li {
-                        margin-left: 6rem;
-                    }
-                    li {
-                        width: 46%;
-                        background: #ffffff;
-                        border-radius: 0rem 0rem 0rem 0rem;
-                        opacity: 1;
-                        border: 0.06rem solid #051631;
-                        padding: 1.5rem;
-                        .titleImg {
-                            position: relative;
-                            img {
-                                width: 9.63rem;
-                                height: 3.63rem;
-                            }
-                            p {
-                                position: absolute;
-                                top: 1.13rem;
-                                left: 4.38rem;
+                            h3 {
+                                width: 9.24rem;
+                                height: 2.19rem;
+                                padding: 0.25rem 1.06rem;
+                                background: #0c2a58;
+                                border-radius: 0.25rem;
                                 font-size: 1rem;
-                                font-family: Arial, sans-serif;
+                                font-family: Microsoft YaHei, sans-serif;
                                 font-weight: bold;
                                 color: #ffffff;
                                 line-height: 1.6rem;
                             }
-                        }
-                        .img {
-                            margin-top: -3rem;
-                            margin-bottom: 2rem;
-                            width: 100%;
-                            img {
-                                width: 100%;
-                                height: auto;
-                            }
-                        }
-                        .card_c {
-                            width: 25rem;
-                            margin: 0 auto;
-                            h2 {
-                                font-size: 1.5rem;
-                                font-family: Microsoft YaHei, sans-serif;
-                                font-weight: bold;
-                                color: #051631;
-                                line-height: 2.4rem;
-                            }
                             p {
-                                margin-top: 1.75rem;
-                                font-size: 1.25rem;
+                                margin-top: 0.63rem;
+                                margin-bottom: 1.25rem;
+                                font-size: 0.88rem;
                                 font-family: Microsoft YaHei, sans-serif;
                                 font-weight: 400;
                                 color: #374e73;
-                                line-height: 2rem;
+                                line-height: 1.4rem;
                             }
                         }
                     }
@@ -303,7 +237,7 @@
                 letter-spacing: 2px;
             }
             .card {
-                margin-top: 2.5rem;
+                margin-top: 2rem;
                 margin-bottom: 6.25rem;
                 display: flex;
                 justify-content: center;
@@ -311,10 +245,10 @@
                     list-style: none;
                     display: flex;
                     li + li {
-                        margin-left: 5%;
+                        margin-left: 2rem;
                     }
                     li {
-                        width: 46%;
+                        width: 49%;
                         background: #ffffff;
                         border-radius: 0rem 0rem 0rem 0rem;
                         opacity: 1;
@@ -339,7 +273,7 @@
                         }
                         .img {
                             margin-top: -3rem;
-                            margin-bottom: 2rem;
+                            margin-bottom: 1rem;
                             width: 100%;
                             img {
                                 width: 100%;
@@ -347,6 +281,7 @@
                             }
                         }
                         .card_c {
+                            width: 100%;
                             margin: 0 auto;
                             h2 {
                                 font-size: 1.5rem;
@@ -355,13 +290,26 @@
                                 color: #051631;
                                 line-height: 2.4rem;
                             }
+                            h3 {
+                                width: 9.24rem;
+                                height: 2.19rem;
+                                padding: 0.25rem 1.06rem;
+                                background: #0c2a58;
+                                border-radius: 0.25rem;
+                                font-size: 1rem;
+                                font-family: Microsoft YaHei, sans-serif;
+                                font-weight: bold;
+                                color: #ffffff;
+                                line-height: 1.6rem;
+                            }
                             p {
-                                margin-top: 1.75rem;
-                                font-size: 1.25rem;
+                                margin-top: 0.63rem;
+                                margin-bottom: 1.25rem;
+                                font-size: 0.88rem;
                                 font-family: Microsoft YaHei, sans-serif;
                                 font-weight: 400;
                                 color: #374e73;
-                                line-height: 2rem;
+                                line-height: 1.4rem;
                             }
                         }
                     }
@@ -437,7 +385,6 @@
                         }
                         .img {
                             margin-top: -4rem;
-                            margin-bottom: 2rem;
                             width: 100%;
                             img {
                                 width: 100%;
@@ -454,13 +401,26 @@
                                 color: #051631;
                                 line-height: 2.67rem;
                             }
+                            h3 {
+                                width: 9.24rem;
+                                height: 2.19rem;
+                                padding: 0.25rem 1.06rem;
+                                background: #0c2a58;
+                                border-radius: 0.25rem;
+                                font-size: 1rem;
+                                font-family: Microsoft YaHei, sans-serif;
+                                font-weight: bold;
+                                color: #ffffff;
+                                line-height: 1.6rem;
+                            }
                             p {
-                                margin-top: 0.92rem;
-                                font-size: 1.33rem;
+                                margin-top: 0.63rem;
+                                margin-bottom: 1.25rem;
+                                font-size: 1rem;
                                 font-family: Microsoft YaHei, sans-serif;
                                 font-weight: 400;
                                 color: #374e73;
-                                line-height: 2.13rem;
+                                line-height: 1.4rem;
                             }
                         }
                     }
