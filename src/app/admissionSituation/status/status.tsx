@@ -105,17 +105,17 @@ function ProgressionStatus() {
             num: '丘*宜',
           }, {
             id: 11,
-            logo: s11,
-            name: '香港科技大学',
-            index: 'QS世界排名#60',
-            num: '刘*芬',
-          }, {
-            id: 12,
             logo: s12,
             name: '南洋理工大学',
             index: 'QS世界排名#26',
             num: '宋*馨',
-          }
+          }, {
+            id: 12,
+            logo: s11,
+            name: '香港科技大学',
+            index: 'QS世界排名#60',
+            num: '刘*芬',
+          },
         ]
       }
     },
@@ -176,16 +176,16 @@ function ProgressionStatus() {
             num: '11封',
           }, {
             id: 9,
-            logo: logoImg9,
-            name: '多伦多大学',
-            index: 'QS世界排名#21',
-            num: '42封',
-          }, {
-            id: 10,
             logo: logoImg10,
             name: '悉尼大学',
             index: 'QS世界排名#19',
             num: '25封',
+          }, {
+            id: 10,
+            logo: logoImg9,
+            name: '多伦多大学',
+            index: 'QS世界排名#21',
+            num: '42封',
           }, {
             id: 11,
             logo: logoImg11,

@@ -38,34 +38,34 @@ function CarouselBox(props: any) {
       num: '15封',
     }, {
       id: 3,
-      logo: logoImg3,
-      name: '纽约大学',
-      index: '美国大学排名#35',
-      num: '26封',
-    }, {
-      id: 4,
       logo: logoImg4,
       name: '加州大学戴维斯分校',
       index: '美国大学排名#28',
       num: '43封',
     }, {
-      id: 5,
-      logo: logoImg5,
-      name: '波士顿大学',
-      index: '美国大学排名#39',
-      num: '12封',
-    }, {
-      id: 6,
+      id: 4,
       logo: logoImg6,
       name: '加州大学欧文分校',
       index: '美国大学排名#33',
       num: '56封',
     }, {
-      id: 7,
+      id: 5,
       logo: logoImg7,
       name: '加州大学圣塔芭芭拉分校',
       index: '美国大学排名#35',
       num: '21封',
+    }, {
+      id: 6,
+      logo: logoImg3,
+      name: '纽约大学',
+      index: '美国大学排名#35',
+      num: '26封',
+    }, {
+      id: 7,
+      logo: logoImg5,
+      name: '波士顿大学',
+      index: '美国大学排名#39',
+      num: '12封',
     }, {
       id: 8,
       logo: logoImg8,
@@ -74,16 +74,16 @@ function CarouselBox(props: any) {
       num: '11封',
     }, {
       id: 9,
-      logo: logoImg9,
-      name: '多伦多大学',
-      index: 'QS世界排名#21',
-      num: '42封',
-    }, {
-      id: 10,
       logo: logoImg10,
       name: '悉尼大学',
       index: 'QS世界排名#19',
       num: '25封',
+    }, {
+      id: 10,
+      logo: logoImg9,
+      name: '多伦多大学',
+      index: 'QS世界排名#21',
+      num: '42封',
     }, {
       id: 11,
       logo: logoImg11,
