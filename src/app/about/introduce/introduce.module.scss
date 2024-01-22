@@ -1,187 +1,726 @@
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1401px) {
     .introduce {
-        margin-top: 6.25rem;
-        margin-bottom: 6.25rem;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        .introduceCenter {
-            max-width: 90rem;
-            width: 73%;
-            display: flex;
-            justify-content: space-between;
-            .title {
-                min-width: 18.56rem;
-                max-width: 18.56rem;
-                h2 {
-                    margin-top: 0.75rem;
-                    font-size: 2rem;
-                    font-family: Abhaya Libre, sans-serif;
-                    font-weight: 400;
-                    color: #1a4588;
-                    line-height: 3.2rem;
-                    letter-spacing: 2px;
-                }
-                h2:last-child {
-                    font-size: 2.25rem;
-                    font-family: Microsoft YaHei, sans-serif;
-                    font-weight: bold;
-                    color: #051631;
-                    line-height: 2.64rem;
-                    letter-spacing: 2px;
-                }
-            }
-            .content {
-                margin-left: 2.5rem;
-                .detail {
-                    p {
-                        font-size: 1.25rem;
-                        font-family: Microsoft YaHei UI, sans-serif;
-                        font-weight: 400;
-                        color: #1e2c43;
-                        line-height: 2.25rem;
-                        letter-spacing: 1px;
-                    }
-                }
-                button {
-                    margin-top: 2.5rem;
-                    width: 12.81rem;
-                    height: 3.63rem;
-                    background: #051631;
-                    border: none;
-                    opacity: 1;
-                    font-size: 1.25rem;
-                    font-family: Arial, sans-serif;
-                    font-weight: 400;
-                    color: #ffffff;
-                    line-height: 2.25rem;
-                    letter-spacing: 1px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 701px) and (max-width: 1000px) {
-    .introduce {
-        margin-top: 5.25rem;
-        margin-bottom: 6.25rem;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        .introduceCenter {
-            width: 90%;
-            display: flex;
-            justify-content: space-between;
-            .title {
-                min-width: 18.56rem;
-                max-width: 18.56rem;
-                h2 {
-                    margin-top: 0.75rem;
-                    font-size: 2rem;
-                    font-family: Abhaya Libre, sans-serif;
-                    font-weight: 400;
-                    color: #1a4588;
-                    line-height: 3.2rem;
-                    letter-spacing: 2px;
-                }
-                h2:last-child {
-                    font-size: 2.25rem;
-                    font-family: Microsoft YaHei, sans-serif;
-                    font-weight: bold;
-                    color: #051631;
-                    line-height: 2.64rem;
-                    letter-spacing: 2px;
-                }
-            }
-            .content {
-                margin-left: 2.5rem;
-                .detail {
-                    p {
-                        font-size: 1.25rem;
-                        font-family: Microsoft YaHei UI, sans-serif;
-                        font-weight: 400;
-                        color: #1e2c43;
-                        line-height: 2.25rem;
-                        letter-spacing: 1px;
-                    }
-                }
-                button {
-                    margin-top: 2.5rem;
-                    width: 12.81rem;
-                    height: 3.63rem;
-                    background: #051631;
-                    border: none;
-                    opacity: 1;
-                    font-size: 1.25rem;
-                    font-family: Arial, sans-serif;
-                    font-weight: 400;
-                    color: #ffffff;
-                    line-height: 2.25rem;
-                    letter-spacing: 1px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .introduce {
-        margin-top: 6.25rem;
-        margin-bottom: 5rem;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        .introduceCenter {
-            width: calc(100% - 2.66rem);
+        .pc {
+            width: 100%;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
-            .title {
-                width: 100%;
-                h2 {
-                    margin-top: 1rem;
-                    font-size: 2.5rem;
-                    font-family: Abhaya Libre, sans-serif;
-                    font-weight: 400;
-                    color: #1a4588;
-                    line-height: 4rem;
-                    letter-spacing: 2px;
-                }
-                h2:last-child {
-                    font-size: 2.67rem;
-                    font-family: Microsoft YaHei, sans-serif;
-                    font-weight: bold;
-                    color: #051631;
-                    line-height: 3.13rem;
-                    letter-spacing: 2px;
-                }
-            }
             .content {
-                margin-top: 1.67rem;
-                .detail {
-                    p {
-                        font-size: 1.25rem;
-                        font-family: Microsoft YaHei UI, sans-serif;
+                margin-top: 3.19rem;
+                margin-bottom: 6.25rem;
+                width: 87rem;
+                display: flex;
+                justify-content: space-between;
+                .left {
+                    position: relative;
+                    z-index: 300;
+                    .title {
+                        margin-top: 3.25rem;
+                        font-size: 2rem;
+                        font-family: Abhaya Libre, sans-serif;
                         font-weight: 400;
-                        color: #1e2c43;
-                        line-height: 2.25rem;
-                        letter-spacing: 1px;
+                        color: #1a4588;
+                        line-height: 3.2rem;
+                        letter-spacing: 2px;
+                    }
+                    h2 {
+                        margin-top: 0.75rem;
+                        margin-bottom: 1.38rem;
+                        font-size: 2.25rem;
+                        font-family: Microsoft YaHei, sans-serif;
+                        font-weight: bold;
+                        color: #310505;
+                        line-height: 2.64rem;
+                        letter-spacing: 2px;
+                    }
+                    .serial {
+                        margin-top: 2.5rem;
+                        display: flex;
+                        .serialCard {
+                            width: 5rem;
+                            display: flex;
+                            justify-content: center;
+                            border-bottom: solid 0.25rem #d9d9d9;
+                            p {
+                                font-size: 2.25rem;
+                                font-family: Arial, sans-serif;
+                                font-weight: bold;
+                                color: #d9d9d9;
+                                line-height: 3rem;
+                            }
+                        }
+                        .activeSerial {
+                            width: 5rem;
+                            display: flex;
+                            justify-content: center;
+                            border-bottom: solid 0.25rem #133871;
+                            p {
+                                font-size: 2.25rem;
+                                font-family: Arial, sans-serif;
+                                font-weight: bold;
+                                color: #133871;
+                                line-height: 3rem;
+                            }
+                        }
+                    }
+                    .activeCard {
+                        margin-top: 1.94rem;
+                        width: 42rem;
+                        height: 12.19rem;
+                        background: #ffffff;
+                        box-shadow: 0rem 0.06rem 0.25rem 0rem
+                            rgba(7, 13, 53, 0.19);
+                        opacity: 1;
+                        padding: 1.06rem 10.6rem 1.06rem 2.03rem;
+                        position: relative;
+                        h3 {
+                            font-size: 1.25rem;
+                            font-family: Microsoft YaHei UI, sans-serif;
+                            font-weight: bold;
+                            color: #051631;
+                            line-height: 2.25rem;
+                            letter-spacing: 1px;
+                        }
+                        p {
+                            margin-top: 0.25rem;
+                            font-size: 0.81rem;
+                            font-family: Microsoft YaHei UI, sans-serif;
+                            font-weight: 400;
+                            color: #1e2c43;
+                            line-height: 1.46rem;
+                            letter-spacing: 1px;
+                        }
+                        .arrow {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 10.25rem;
+                            height: 100%;
+                            img {
+                                width: 100%;
+                                height: 101%;
+                            }
+                        }
                     }
                 }
-                button {
-                    margin-top: 1.67rem;
-                    width: 17.08rem;
-                    height: 4.83rem;
-                    background: #051631;
-                    border: none;
-                    opacity: 1;
-                    font-size: 1.67rem;
-                    font-family: Arial, sans-serif;
-                    font-weight: 400;
-                    color: #ffffff;
-                    line-height: 3rem;
-                    letter-spacing: 1px;
+                .right {
+                    margin-left: -4.31rem;
+                    z-index: 200;
+                    .right_bg {
+                        width: 49.38rem;
+                        height: 36.38rem;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .mask {
+                        display: none;
+                    }
+                }
+                .right:hover {
+                    position: relative;
+                    .mask {
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 50%;
+                        background: linear-gradient(
+                            360deg,
+                            #07224d 0%,
+                            rgba(6, 36, 81, 0.05) 100%
+                        );
+                        padding: 12rem 2.13rem 1.63rem 6rem;
+                        p {
+                            font-size: 1rem;
+                            font-family: Microsoft YaHei UI, sans-serif;
+                            font-weight: 400;
+                            color: #ffffff;
+                            line-height: 1.8rem;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+    .introduce {
+        width: 100%;
+        .pc {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .content {
+                margin-top: 3.19rem;
+                margin-bottom: 6.25rem;
+                width: 90%;
+                display: flex;
+                align-items: center;
+                .left {
+                    position: relative;
+                    z-index: 300;
+                    .title {
+                        font-size: 2rem;
+                        font-family: Abhaya Libre, sans-serif;
+                        font-weight: 400;
+                        color: #1a4588;
+                        line-height: 3.2rem;
+                        letter-spacing: 2px;
+                    }
+                    h2 {
+                        margin-top: 0.5rem;
+                        margin-bottom: 1.38rem;
+                        font-size: 2.25rem;
+                        font-family: Microsoft YaHei, sans-serif;
+                        font-weight: bold;
+                        color: #310505;
+                        line-height: 2.64rem;
+                        letter-spacing: 2px;
+                    }
+                    .serial {
+                        margin-top: 2.5rem;
+                        display: flex;
+                        .serialCard {
+                            width: 5rem;
+                            display: flex;
+                            justify-content: center;
+                            border-bottom: solid 0.25rem #d9d9d9;
+                            p {
+                                font-size: 2.25rem;
+                                font-family: Arial, sans-serif;
+                                font-weight: bold;
+                                color: #d9d9d9;
+                                line-height: 3rem;
+                            }
+                        }
+                        .activeSerial {
+                            width: 5rem;
+                            display: flex;
+                            justify-content: center;
+                            border-bottom: solid 0.25rem #133871;
+                            p {
+                                font-size: 2.25rem;
+                                font-family: Arial, sans-serif;
+                                font-weight: bold;
+                                color: #133871;
+                                line-height: 3rem;
+                            }
+                        }
+                    }
+                    .activeCard {
+                        margin-top: 1.94rem;
+                        width: 36rem;
+                        background: #ffffff;
+                        box-shadow: 0rem 0.06rem 0.25rem 0rem
+                            rgba(7, 13, 53, 0.19);
+                        opacity: 1;
+                        padding: 1.06rem 10.6rem 1.06rem 2.03rem;
+                        position: relative;
+                        h3 {
+                            font-size: 1.25rem;
+                            font-family: Microsoft YaHei UI, sans-serif;
+                            font-weight: bold;
+                            color: #051631;
+                            line-height: 2.25rem;
+                            letter-spacing: 1px;
+                        }
+                        p {
+                            margin-top: 0.25rem;
+                            font-size: 0.81rem;
+                            font-family: Microsoft YaHei UI, sans-serif;
+                            font-weight: 400;
+                            color: #1e2c43;
+                            line-height: 1.46rem;
+                            letter-spacing: 1px;
+                        }
+                        .arrow {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 10.25rem;
+                            height: 100%;
+                            img {
+                                width: 100%;
+                                height: 101%;
+                            }
+                        }
+                    }
+                }
+                .right {
+                    margin-left: -5rem;
+                    position: relative;
+                    z-index: 200;
+                    .right_bg {
+                        width: 40rem;
+                        height: 32rem;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .mask {
+                        display: none;
+                    }
+                }
+                .right:hover {
+                    .mask {
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 50%;
+                        background: linear-gradient(
+                            360deg,
+                            #07224d 0%,
+                            rgba(6, 36, 81, 0.05) 100%
+                        );
+                        padding: 9rem 2.13rem 1.63rem 7rem;
+                        p {
+                            font-size: 1rem;
+                            font-family: Microsoft YaHei UI, sans-serif;
+                            font-weight: 400;
+                            color: #ffffff;
+                            line-height: 1.8rem;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .introduce {
+        width: 100%;
+        .pc {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .content {
+                margin-top: 3.19rem;
+                margin-bottom: 6.25rem;
+                width: 90%;
+                display: flex;
+                align-items: center;
+                .left {
+                    position: relative;
+                    z-index: 300;
+                    .title {
+                        font-size: 2rem;
+                        font-family: Abhaya Libre, sans-serif;
+                        font-weight: 400;
+                        color: #1a4588;
+                        line-height: 3.2rem;
+                        letter-spacing: 2px;
+                    }
+                    h2 {
+                        margin-top: 0.5rem;
+                        margin-bottom: 1.38rem;
+                        font-size: 2.25rem;
+                        font-family: Microsoft YaHei, sans-serif;
+                        font-weight: bold;
+                        color: #310505;
+                        line-height: 2.64rem;
+                        letter-spacing: 2px;
+                    }
+                    .serial {
+                        margin-top: 2rem;
+                        display: flex;
+                        .serialCard {
+                            width: 5rem;
+                            display: flex;
+                            justify-content: center;
+                            border-bottom: solid 0.25rem #d9d9d9;
+                            p {
+                                font-size: 2.25rem;
+                                font-family: Arial, sans-serif;
+                                font-weight: bold;
+                                color: #d9d9d9;
+                                line-height: 3rem;
+                            }
+                        }
+                        .activeSerial {
+                            width: 5rem;
+                            display: flex;
+                            justify-content: center;
+                            border-bottom: solid 0.25rem #133871;
+                            p {
+                                font-size: 2.25rem;
+                                font-family: Arial, sans-serif;
+                                font-weight: bold;
+                                color: #133871;
+                                line-height: 3rem;
+                            }
+                        }
+                    }
+                    .activeCard {
+                        margin-top: 1rem;
+                        width: 34rem;
+                        background: #ffffff;
+                        box-shadow: 0rem 0.06rem 0.25rem 0rem
+                            rgba(7, 13, 53, 0.19);
+                        opacity: 1;
+                        padding: 1.06rem 10.6rem 1.06rem 2.03rem;
+                        position: relative;
+                        h3 {
+                            font-size: 1.25rem;
+                            font-family: Microsoft YaHei UI, sans-serif;
+                            font-weight: bold;
+                            color: #051631;
+                            line-height: 2.25rem;
+                            letter-spacing: 1px;
+                        }
+                        p {
+                            margin-top: 0.25rem;
+                            font-size: 0.88rem;
+                            font-family: Microsoft YaHei UI, sans-serif;
+                            font-weight: 400;
+                            color: #1e2c43;
+                            line-height: 1.46rem;
+                            letter-spacing: 1px;
+                        }
+                        .arrow {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 10.25rem;
+                            height: 100%;
+                            img {
+                                width: 100%;
+                                height: 101%;
+                            }
+                        }
+                    }
+                }
+                .right {
+                    margin-left: -6rem;
+                    position: relative;
+                    z-index: 200;
+                    .right_bg {
+                        width: 36rem;
+                        height: 30rem;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .mask {
+                        display: none;
+                    }
+                }
+                .right:hover {
+                    .mask {
+                        display: block;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 50%;
+                        background: linear-gradient(
+                            360deg,
+                            #07224d 0%,
+                            rgba(6, 36, 81, 0.05) 100%
+                        );
+                        padding: 7rem 2rem 1.63rem 7.5rem;
+                        p {
+                            font-size: 1rem;
+                            font-family: Microsoft YaHei UI, sans-serif;
+                            font-weight: 400;
+                            color: #ffffff;
+                            line-height: 1.8rem;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+    .introduce {
+        width: 100%;
+        .pc {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .content {
+                margin-top: 3.19rem;
+                margin-bottom: 6.25rem;
+                width: 80%;
+                .left {
+                    .title {
+                        font-size: 2rem;
+                        font-family: Abhaya Libre, sans-serif;
+                        font-weight: 400;
+                        color: #1a4588;
+                        line-height: 3.2rem;
+                        letter-spacing: 2px;
+                    }
+                    h2 {
+                        margin-top: 0.5rem;
+                        margin-bottom: 1.38rem;
+                        font-size: 2.25rem;
+                        font-family: Microsoft YaHei, sans-serif;
+                        font-weight: bold;
+                        color: #310505;
+                        line-height: 2.64rem;
+                        letter-spacing: 2px;
+                    }
+                    .serial {
+                        margin-top: 2rem;
+                        display: flex;
+                        .serialCard {
+                            width: 5rem;
+                            display: flex;
+                            justify-content: center;
+                            border-bottom: solid 0.25rem #d9d9d9;
+                            p {
+                                font-size: 2.25rem;
+                                font-family: Arial, sans-serif;
+                                font-weight: bold;
+                                color: #d9d9d9;
+                                line-height: 3rem;
+                            }
+                        }
+                        .activeSerial {
+                            width: 5rem;
+                            display: flex;
+                            justify-content: center;
+                            border-bottom: solid 0.25rem #133871;
+                            p {
+                                font-size: 2.25rem;
+                                font-family: Arial, sans-serif;
+                                font-weight: bold;
+                                color: #133871;
+                                line-height: 3rem;
+                            }
+                        }
+                    }
+                    .activeCard {
+                        margin-top: 1rem;
+                        width: 100%;
+                        min-height: 12rem;
+                        background: #ffffff;
+                        box-shadow: 0rem 0.06rem 0.25rem 0rem
+                            rgba(7, 13, 53, 0.19);
+                        opacity: 1;
+                        padding: 1.06rem 10.6rem 1.06rem 2.03rem;
+                        position: relative;
+                        h3 {
+                            font-size: 1.25rem;
+                            font-family: Microsoft YaHei UI, sans-serif;
+                            font-weight: bold;
+                            color: #051631;
+                            line-height: 2.25rem;
+                            letter-spacing: 1px;
+                        }
+                        p {
+                            margin-top: 0.25rem;
+                            font-size: 0.88rem;
+                            font-family: Microsoft YaHei UI, sans-serif;
+                            font-weight: 400;
+                            color: #1e2c43;
+                            line-height: 1.46rem;
+                            letter-spacing: 1px;
+                        }
+                        .arrow {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 10.25rem;
+                            height: 100%;
+                            img {
+                                width: 100%;
+                                height: 101%;
+                            }
+                        }
+                    }
+                }
+                .right {
+                    margin-top: 2.5rem;
+                    position: relative;
+                    z-index: -1;
+                    .right_bg {
+                        width: 100%;
+                        height: auto;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .mask {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 50%;
+                        background: linear-gradient(
+                            360deg,
+                            #07224d 0%,
+                            rgba(6, 36, 81, 0.05) 100%
+                        );
+                        display: flex;
+                        align-items: flex-end;
+                        padding: 2rem;
+                        p {
+                            font-size: 1rem;
+                            font-family: Microsoft YaHei UI, sans-serif;
+                            font-weight: 400;
+                            color: #ffffff;
+                            line-height: 1.8rem;
+                            letter-spacing: 1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .introduce {
+        width: 100%;
+        .pc {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            .content {
+                margin-top: 3rem;
+                margin-bottom: 5rem;
+                width: calc(100% - 2.66rem);
+                .left {
+                    .title {
+                        font-size: 2rem;
+                        font-family: Abhaya Libre, sans-serif;
+                        font-weight: 400;
+                        color: #1a4588;
+                        line-height: 3.2rem;
+                        letter-spacing: 2px;
+                    }
+                    h2 {
+                        margin-top: 0.5rem;
+                        margin-bottom: 1.38rem;
+                        font-size: 2.25rem;
+                        font-family: Microsoft YaHei, sans-serif;
+                        font-weight: bold;
+                        color: #310505;
+                        line-height: 2.64rem;
+                        letter-spacing: 2px;
+                    }
+                    .serial {
+                        margin-top: 2rem;
+                        display: flex;
+                        .serialCard {
+                            width: 5rem;
+                            display: flex;
+                            justify-content: center;
+                            border-bottom: solid 0.25rem #d9d9d9;
+                            p {
+                                font-size: 2.25rem;
+                                font-family: Arial, sans-serif;
+                                font-weight: bold;
+                                color: #d9d9d9;
+                                line-height: 3rem;
+                            }
+                        }
+                        .activeSerial {
+                            width: 5rem;
+                            display: flex;
+                            justify-content: center;
+                            border-bottom: solid 0.25rem #133871;
+                            p {
+                                font-size: 2.25rem;
+                                font-family: Arial, sans-serif;
+                                font-weight: bold;
+                                color: #133871;
+                                line-height: 3rem;
+                            }
+                        }
+                    }
+                    .activeCard {
+                        margin-top: 1rem;
+                        width: 100%;
+                        min-height: 18rem;
+                        background: #ffffff;
+                        box-shadow: 0rem 0.06rem 0.25rem 0rem
+                            rgba(7, 13, 53, 0.19);
+                        opacity: 1;
+                        padding: 1.06rem 10.6rem 1.06rem 2.03rem;
+                        position: relative;
+                        h3 {
+                            font-size: 1.25rem;
+                            font-family: Microsoft YaHei UI, sans-serif;
+                            font-weight: bold;
+                            color: #051631;
+                            line-height: 2.25rem;
+                            letter-spacing: 1px;
+                        }
+                        p {
+                            margin-top: 0.25rem;
+                            font-size: 0.88rem;
+                            font-family: Microsoft YaHei UI, sans-serif;
+                            font-weight: 400;
+                            color: #1e2c43;
+                            line-height: 1.46rem;
+                            letter-spacing: 1px;
+                        }
+                        .arrow {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            width: 10.25rem;
+                            height: 100%;
+                            img {
+                                width: 100%;
+                                height: 101%;
+                            }
+                        }
+                    }
+                }
+                .right {
+                    margin-top: 2.5rem;
+                    position: relative;
+                    z-index: -1;
+
+                    .right_bg {
+                        width: 100%;
+                        height: auto;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .mask {
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 50%;
+                        background: linear-gradient(
+                            360deg,
+                            #07224d 0%,
+                            rgba(6, 36, 81, 0.05) 100%
+                        );
+                        display: flex;
+                        align-items: flex-end;
+                        padding: 2rem;
+                        p {
+                            font-size: 1rem;
+                            font-family: Microsoft YaHei UI, sans-serif;
+                            font-weight: 400;
+                            color: #ffffff;
+                            line-height: 1.8rem;
+                            letter-spacing: 1px;
+                        }
+                    }
                 }
             }
         }
