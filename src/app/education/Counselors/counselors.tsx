@@ -44,7 +44,7 @@ function Counselors() {
     }, {
       id: 5,
       img: teacher5,
-      name: '刘晶',
+      name: '王晶  ',
       introduce: ['原广州大学附属中学国际部德育主任', '超10年一线国际教学经验', '连续多届获得校级“优秀德育工作者”称号'],
     }, {
       id: 6,

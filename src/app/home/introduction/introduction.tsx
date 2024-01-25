@@ -32,7 +32,7 @@ function Introduction() {
   return (
     <div className={styles.introduce}>
       <div className={styles.content}>
-        <h2>国际班班级介绍</h2>
+        <h2>云顶精英班级介绍</h2>
         <h3>Class introduction</h3>
         <div className={styles.card}>
           <ul>

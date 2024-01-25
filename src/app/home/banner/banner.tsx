@@ -13,7 +13,7 @@ function Banner() {
             <div className={styles.logo}>
               <Image src={logoImg} alt='' ></Image>
             </div>
-            <h1>云顶精英国际部</h1>
+            <h1>深圳市云顶学校精英部</h1>
             <h2>Shenzhen Yunding Elite Education</h2>
             <p>阳光.和谐.多元.发展</p>
             <p>云自天上来 顶从脚下立</p>

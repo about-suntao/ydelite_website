@@ -17,8 +17,8 @@ function InternationalClass() {
             </div>
           </div>
           <div className={styles.right}>
-            <h2>云顶精英国际班</h2>
-            <h3>International Class</h3>
+            <h2>云顶精英国际高中</h2>
+            <h3>Yunding Elite International High School</h3>
             <p>云顶学校精英部成立于2014年，学部坚持“外语特色、文理并重、国际合作”的办学思想，
               云顶精英国际高中经深圳市教育局批准开设“国际课程实验班”
               搭建对外交流合作平台，拓宽云顶学子升学渠道</p>

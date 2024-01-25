@@ -24,7 +24,7 @@ function Pedagogical() {
       id: 2,
       img: leaderImg2,
       name: '陈浩宇',
-      position: '精英国际高中教学校长',
+      position: '精英国际高中副校长',
       introduce: '美国杜克大学硕士毕业，曾任广州大学附属中学国际部校长，美国Kuder职业生涯测评机构华南区代表',
     },
     {
