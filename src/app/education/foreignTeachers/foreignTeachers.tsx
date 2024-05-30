@@ -37,20 +37,20 @@ function CarouselBox(props: any) {
       serialNumber: serialP1,
     }, {
       id: 2,
-      name: 'Francesca Kennedy',
-      picture: teamP3,
-      honor: ['哈佛大学历史与文学学士'],
-      signature: signatureP3,
-      introduce: '教授9至12年级学生文学辩证、学术写作和比较文学等课程，帮助学生发展他们在大学及以后所需的写作和批判性思维技能。对于中国有着浓厚的感情，曾在北京为一档教育电视节目工作两年，并在大学学习中文，使她能够在美国申请背景下帮助中国学生定位他们的申请。在工作之外，也是一位小说家，获得了巴黎评论杂志的出版商德鲁·海因兹女士的2022年小说赫桑丁奖学金。',
-      serialNumber: serialP3,
-    }, {
-      id: 3,
       name: 'Christina Sok',
       picture: teamP2,
       honor: ['哥伦比亚大学巴纳德学院学士', '伦敦大学硕士'],
       signature: signatureP2,
       introduce: '在2014年至2020年期间，曾担任南洋理工大学、新加坡国立大学和拉萨尔艺术学院的教职，为学生提供艺术类课程教学与专业指导。',
       serialNumber: serialP2,
+    }, {
+      id: 3,
+      name: 'Francesca Kennedy',
+      picture: teamP3,
+      honor: ['哈佛大学历史与文学学士'],
+      signature: signatureP3,
+      introduce: '教授9至12年级学生文学辩证、学术写作和比较文学等课程，帮助学生发展他们在大学及以后所需的写作和批判性思维技能。对于中国有着浓厚的感情，曾在北京为一档教育电视节目工作两年，并在大学学习中文，使她能够在美国申请背景下帮助中国学生定位他们的申请。在工作之外，也是一位小说家，获得了巴黎评论杂志的出版商德鲁·海因兹女士的2022年小说赫桑丁奖学金。',
+      serialNumber: serialP3,
     }, {
       id: 4,
       name: 'Linda Wu',
